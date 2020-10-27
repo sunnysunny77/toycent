@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* global */
+
+body {
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+}
+
+#outer {
+    padding: 1.5% 0 1.5% 0;
+    margin: auto;
+    max-width: 1020px;
+    background-image: url(../images/outer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, nav {
+    margin: 0 1.5% 1.5% 1.5%;
+    width: 97%;
+}
+
+main {
+    margin: 0 1.5% 1.5% 1.5%;
+    padding: 3%;
+    width: 91%;
+    display: flex;
+}
+
+footer {
+    margin: 0 1.5% 0 1.5%;
+    width: 97%;
+}
+
+header, nav, main, footer {
+    background-color: paleturquoise;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.sec1 {
+    background-image: linear-gradient(to right, paleturquoise, lightcyan);
+    width: 33.5%;
+    float: left;
+    color: steelblue;
+    margin-right: 1.5%;
+}
+
+.sec2 {
+    background-color: lightcyan;
+    width: 63.5%;
+    float: left;
+    color: #999900;
+    margin-left: 1.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: mediumslateblue;
+    font-size: large;
+    font-weight: 500;
+}
+
+header, nav, #pics span, footer {
+    white-space: nowrap;
+}
+
+.sec1, .sec2, header, nav {
+    overflow: hidden;
+}
+
+nav li, footer li {
+    display: inline;
+}
+
+.clearfloat {
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+    float: none;
+    height: 0px;
+    width: 0px;
+    border: 0px none;
+    line-height: 0px;
+}
+
+/* response */
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 0.95em;
+    }
+    q {
+        display: none !important;
+    }
+    header img {
+        width: 240px !important;
+        padding: 30px 0 !important;
+    }
+    h1 {
+        font-size: inherit;
+    }
+    #outer {
+        padding: 0;
+    }
+    main {
+        width: 94%;
+        margin-right: auto;
+        margin-left: auto;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+    main .sec1 ul {
+        padding: 17.5%;
+    }
+    header, nav, footer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+    footer .sec1 h5, footer .sec2 h5 {
+        font-size: inherit;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 0.66em;
+    }
+    nav {
+        font-size: 0.9em;
+    }
+    footer {
+        white-space: normal;
+    }
+    footer .sec2 ul {
+        line-height: 45px !important;
+        height: 90px;
+        float: right;
+        width: calc(132px - 3%)!important;
+        margin-right: 3%;
+        font-size: 0.9em;
+    }
+}
+
+/* header */
+
+header {
+    height: 200px;
+}
+
+header img {
+    width: 35%;
+    height: 200px;
+    padding: 30px 0 30px 30px;
+    box-sizing: border-box;
+}
+
+header q {
+    color: steelblue;
+    position: relative;
+    top: -45px;
+    padding: 10px;
+    background-image: linear-gradient(to right, paleturquoise, lightcyan);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* nav */
+
+nav {
+    height: 75px;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    line-height: 75px;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    display: inline;
+}
+
+/* main */
+
+.sec1 h2 {
+    margin-bottom: 5%;
+}
+
+.sec1 h4 {
+    display: inline;
+}
+
+.sec2 h2 {
+    margin: 3% 3%;
+    float: right;
+}
+
+.sec2 h3 {
+    color: indianred;
+    margin-bottom: 1.5%;
+}
+
+main .sec1 ul {
+    margin-top: 4.5%;
+}
+
+#news h3 {
+    text-align: right;
+    margin: 0 3% 3% 0;
+}
+
+#news h4 {
+    color: orangered;
+    padding-bottom: 3%;
+}
+
+#news article {
+    float: left;
+    width: 41%;
+    text-align: center;
+    padding: 0 4.5% 3% 4.5%;
+}
+
+#pics {
+    display: flex;
+    flex-direction: column;
+}
+
+#pics h3 {
+    align-self: flex-end;
+    margin: 0 3% 3% 0;
+}
+
+#pics span {
+    text-align: center;
+}
+
+.img {
+    box-sizing: border-box;
+    border: 1px solid tomato;
+    /* i am using a width so that the picture shrinks, hovever the desktop resolution is now the same as the picture? */
+    width: 19.682%;
+    margin: 0 1.5% 1.5% 1.5%;
+}
+
+#pics aside {
+    text-align: center;
+    margin: 2% 4.5% 3% 4.5%;
+}
+
+#toyprice h3 {
+    text-align: right;
+    margin: 0 3% 3% 0;
+}
+
+#toyprice img, #toyprice ol, #toyprice ul {
+    float: right;
+}
+
+#toyprice p {
+    text-align: center;
+    margin: 0 4.5% 2% 4.5%;
+}
+
+#toyprice ol {
+    margin-right: 6%;
+}
+
+#toyprice img {
+    max-width: 20%;
+}
+
+#toyprice section {
+    margin-right: 6%;
+}
+
+/* footer */
+
+footer {
+    height: 150px;
+    background-color: paleturquoise;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer .sec2 h5 {
+    display: inline;
+}
+
+footer .sec1, footer .sec2 {
+    margin-top: 30px;
+}
+
+footer .sec1 {
+    margin-left: 3%;
+    width: 31.5%;
+}
+
+footer .sec2 {
+    width: 59%;
+}
+
+footer ul {
+    line-height: 90px;
+    margin: 0;
+    padding: 0;
+}
